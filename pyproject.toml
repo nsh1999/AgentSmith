@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agentsmith"
+version = "0.1.0"
+description = "Experiments with local LLM agents: LangGraph tool-calling, TypeSafe structured decisions, and Laya/MLX inference."
+requires-python = ">=3.14"
+license = "MIT"
+dependencies = [
+    # Agent graphs and tool calling (graph_001.py)
+    "langchain>=1.4.3",
+    "langchain-ollama>=1.1.0",
+    "langgraph>=1.2.12",
+    "typing-extensions>=4.16.0",
+    # Structured, typed decisions from a single forward pass (test_003..005, ollama_demo_001)
+    "typesafe-sdk>=0.7.2",
+    # Local inference backends (laya_demo*.py, test_001.py, test_002.py)
+    "laya-mlx>=0.2.0",
+    "lmstudio>=1.5.0",
+    "openai>=3.20.0",
+    # Notebook-style display helpers (graph_001.py)
+    "ipython>=9.17.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.6",
+]
+
+[tool.setuptools]
+py-modules = [
+    "graph_001",
+    "laya_demo",
+    "laya_demo_002",
+    "ollama_demo_001",
+    "test_001",
+    "test_002",
+    "test_003",
+    "test_004",
+    "test_005",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py314"
