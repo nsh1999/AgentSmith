@@ -139,4 +139,5 @@ scripts are never imported.
 
 ## License
 
-MIT
+Licensed under the [Apache License, Version 2.0](LICENSE); see `LICENSE` for the
+full text.

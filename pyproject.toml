@@ -7,7 +7,7 @@ name = "agentsmith"
 version = "0.1.0"
 description = "Experiments with local LLM agents: LangGraph tool-calling, TypeSafe structured decisions, and Laya/MLX inference."
 requires-python = ">=3.14"
-license = "MIT"
+license = "Apache-2.0"
 dependencies = [
     # Agent graphs and tool calling (graph_001.py)
     "langchain>=1.4.3",
