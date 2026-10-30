@@ -1,5 +1,4 @@
 # AgentSmith
-## 2026
 
 Local LLM experiments with an interactive front end: ask typed questions about a
 support ticket, have several local models answer them, and aggregate the answers
@@ -32,7 +31,15 @@ The decision engine turns each question into a typed answer:
   - [LM Studio](https://lmstudio.ai) — default `http://localhost:1234`
 - Apple Silicon for the MLX-based demos in `sandbox/`.
 
+## Ollama
+
+Install Ollama using this WEB page https://ollama.com/download.
+The suitable decision models are located here https://ollama.com/search?c=decision
+Use Ollama to download the models to be used for this experiment.
+Do notice that I am using the MXL models tha requires a Mac with a M1 , M2, M3, M4, M5 or M6 chip.
+
 ## Setup
+
 
 ```bash
 uv sync --extra dev          # preferred; uv.lock is the source of truth
