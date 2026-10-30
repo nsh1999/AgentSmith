@@ -2,7 +2,6 @@
 .venv/
 venv/
 env/
-sandbox/
 
 # Python
 __pycache__/
@@ -10,6 +9,8 @@ __pycache__/
 *.egg-info/
 build/
 dist/
+sandbox/
+smith/
 
 # Tooling caches
 .pytest_cache/
