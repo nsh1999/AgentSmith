@@ -23,6 +23,8 @@ dependencies = [
     # Notebook-style display helpers (graph_001.py)
     "ipython>=9.17.1",
     "langgraph-cli[inmem]>=0.4.32",
+    # Interactive decision GUI (decision_gui.py)
+    "gradio>=6.31,<7",
 ]
 
 [project.optional-dependencies]
@@ -33,6 +35,8 @@ dev = [
 
 [tool.setuptools]
 py-modules = [
+    "decision_gui",
+    "decision_maker",
     "graph_001",
     "laya_demo",
     "laya_demo_002",
@@ -45,7 +49,10 @@ py-modules = [
 ]
 
 [tool.pytest.ini_options]
-testpaths = ["."]
+# Only collect the real suite: the root test_00*.py files are manual demos that
+# make network calls at import time.
+testpaths = ["tests"]
+pythonpath = ["."]
 python_files = ["test_*.py"]
 
 [tool.ruff]
