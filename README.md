@@ -31,7 +31,7 @@ The decision engine turns each question into a typed answer:
   - [LM Studio](https://lmstudio.ai) — default `http://localhost:1234`
 - Apple Silicon for the MLX-based demos in `sandbox/`.
 
-## Ollama
+## Ollama Setup
 
 1. Install Ollama using this WEB page https://ollama.com/download.
 1. The suitable decision models are located here https://ollama.com/search?c=decision
