@@ -33,10 +33,10 @@ The decision engine turns each question into a typed answer:
 
 ## Ollama
 
-Install Ollama using this WEB page https://ollama.com/download.
-The suitable decision models are located here https://ollama.com/search?c=decision
-Use Ollama to download the models to be used for this experiment.
-Do notice that I am using the MXL models tha requires a Mac with a M1 , M2, M3, M4, M5 or M6 chip.
+1. Install Ollama using this WEB page https://ollama.com/download.
+1. The suitable decision models are located here https://ollama.com/search?c=decision
+1. Use Ollama to download the models to be used for this experiment.
+1. Do notice that I am using the MXL models tha requires a Mac with a M1 , M2, M3, M4, M5 or M6 chip.
 
 ## Setup
 
