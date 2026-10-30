@@ -1,4 +1,5 @@
 # AgentSmith
+## 2026
 
 Local LLM experiments with an interactive front end: ask typed questions about a
 support ticket, have several local models answer them, and aggregate the answers
